@@ -1,10 +1,6 @@
-silverstripe-glossary
-=====================
-
-Highlights keywords in text, perfect for targeting with JS and decorating with popups
-
-Overview
------------------------------------------------
+###############################################
+Glossary scanner plugin for SilverStripe 2.4
+###############################################
 
 The Glossary plugin for the SilverStripe framework allows scanning of HTML or 
 plain text content for keywords, and highlighting these keywords.
@@ -27,18 +23,34 @@ non suscipit <a href="/glossary/#Magna" name="Magna" class="glossaryterm">magna
 <p>Aenean feugiat sollicitudin ipsum in dapibus.</p>
 
 
+Maintainer Contact
+-----------------------------------------------
+Darren Inwood
+<darren (dot) inwood (at) chrometoaster (dot) com>
+
+
 Requirements
 -----------------------------------------------
-SilverStripe 2.4, untested with 3.x
+SilverStripe 2.4 or newer
+
+
+Documentation
+-----------------------------------------------
+https://code.google.com/p/glossary-silverstripe-plugin/
 
 
 Installation Instructions
 -----------------------------------------------
 
-Check out the archive into the root directory of your project. This should be
+Check out the archive into the root directory of your project. This should be 
 the same folder as the 'sapphire' directory.
 
-Run `/dev/build?flush=1` to tell your SilverStripe about your new module.
+svn export http://glossary-silverstripe-plugin.googlecode.com/svn/trunk/ glossary
+
+This will create a directory called 'glossary' containing the plugin files.
+
+Run `/dev/build` to tell your SilverStripe about your new module, and your 
+module is installed!
 
 
 Configuration
@@ -182,4 +194,6 @@ you could use:
     "definition" : "$Definition.ATT"
 }
 <% end_control %>
+
+
 
